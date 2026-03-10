@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 function App() {
-  // Use NASA DEMO_KEY by default
-  const apiKey = "DEMO_KEY";
+  // NASA API key from environment variables
+  const apiKey = import.meta.env.VITE_NASA_API_KEY;
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
