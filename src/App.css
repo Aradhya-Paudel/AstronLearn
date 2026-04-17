@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.app-shell {
+  position: relative;
+  background-color: #131317;
+  color: #e5e1e7;
+  font-family: Inter, sans-serif;
+  overflow-x: clip;
+}
+
+.app-bg-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(173, 198, 255, 0.14),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(163, 84, 227, 0.14),
+      transparent 34%
+    ),
+    linear-gradient(135deg, rgba(17, 17, 20, 0.8), rgba(19, 19, 23, 0.98));
+}
+
+.glass-panel {
+  background: rgba(31, 31, 35, 0.45);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(147, 143, 151, 0.16);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #adc6ff 0%, #2377ef 100%);
+}
+
+.celestial-glow {
+  box-shadow: 0 0 64px rgba(173, 198, 255, 0.09);
+}
